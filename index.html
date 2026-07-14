@@ -65,11 +65,11 @@
             <details>
               <summary>Build settings <span>Adjust for your materials</span></summary>
               <div class="settings-grid">
-                <label>Fence height <span><input id="height" type="number" min="0.1" step="0.01" value="1.8"><select id="height-unit" aria-label="Height unit"><option value="metres">m</option><option value="feet">ft</option></select></span></label>
-                <label>Maximum post spacing <span><input id="post-spacing" type="number" min="0.1" step="0.01" value="1.8"><select id="spacing-unit" aria-label="Spacing unit"><option value="metres">m</option><option value="feet">ft</option></select></span></label>
+                <label>Fence height <span><input id="height" type="number" min="0.1" step="0.01" value="6"><select id="height-unit" aria-label="Height unit"><option value="metres">m</option><option value="feet" selected>ft</option></select></span></label>
+                <label>Maximum post spacing <span><input id="post-spacing" type="number" min="0.1" step="0.01" value="6"><select id="spacing-unit" aria-label="Spacing unit"><option value="metres">m</option><option value="feet" selected>ft</option></select></span></label>
                 <label>Board face width <span><input id="board-width" type="number" min="1" step="1" value="100"><b>mm</b></span></label>
                 <label>Gap between boards <span><input id="board-gap" type="number" min="0" step="1" value="10"><b>mm</b></span></label>
-                <label>Rails per bay (vertical) <span><input id="rails-per-bay" type="number" min="1" step="1" value="3"><b>rails</b></span></label>
+                <label>Rails per bay (vertical) <span><input id="rails-per-bay" type="number" min="1" step="1" value="2"><b>rails</b></span></label>
               </div>
             </details>
             <p class="form-error" id="calculator-error" role="alert"></p>
@@ -78,7 +78,7 @@
             <div class="results-head"><span>Estimated materials</span><small id="run-summary">For a 10 m fence run</small></div>
             <div class="result-common"><div><span>Posts</span><strong id="posts-result">7</strong></div><p id="bay-summary">6 bays at ≤ 1.67 m</p></div>
             <div class="orientation-grid">
-              <article><div class="orientation-title"><span class="board-icon vertical"></span><div><small>Vertical boards</small><strong>Portrait</strong></div></div><dl><div><dt>Boards</dt><dd id="vertical-boards-result">91</dd></div><div><dt>Rails</dt><dd id="rails-result">18</dd></div></dl></article>
+              <article><div class="orientation-title"><span class="board-icon vertical"></span><div><small>Vertical boards</small><strong>Portrait</strong></div></div><dl><div><dt>Boards</dt><dd id="vertical-boards-result">91</dd></div><div><dt>Rails</dt><dd id="rails-result">12</dd></div></dl></article>
               <article><div class="orientation-title"><span class="board-icon horizontal"></span><div><small>Horizontal boards</small><strong>Landscape</strong></div></div><dl><div><dt>Boards</dt><dd id="horizontal-boards-result">102</dd></div><div><dt>Rails</dt><dd>Not required</dd></div></dl></article>
             </div>
             <div class="calculation-note"><strong>How this is calculated</strong><p id="formula-summary"></p></div>
